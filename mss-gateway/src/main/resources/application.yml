@@ -19,9 +19,12 @@ zuul:
   routes:
     uaa:
       path: /uaa/**
-      strip-prefix: true
       sensitiveHeaders:
-      serviceId: authcenter
+      serviceId: auth-center
+    foo:
+      path: /foo/**
+      sensitiveHeaders:
+      serviceId: mss-foo
 security:
   oauth2:
     resource:

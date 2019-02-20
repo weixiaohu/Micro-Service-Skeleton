@@ -1,1 +1,0 @@
-java -jar .\target\Micro-Service-Skeleton-Gateway-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,1 @@
+java -jar .\target\mss-monitor-1.0.0.jar

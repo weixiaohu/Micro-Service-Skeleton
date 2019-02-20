@@ -1,0 +1,1 @@
+java -jar .\target\mss-gateway-1.0.0.jar

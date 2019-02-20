@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.microservice.skeleton</groupId>
-	<artifactId>Micro-Service-Skeleton-Parent</artifactId>
-	<version>2.0.0</version>
+	<groupId>com.microservice.asc</groupId>
+	<artifactId>Micro-Service-ASC-Parent</artifactId>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
-	<name>Micro-Service-Skeleton</name>
+	<name>Micro-Service-ASC</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -21,9 +21,6 @@
 		<lombok.version>1.16.20</lombok.version>
 		<mybatis-plus.version>2.2.0</mybatis-plus.version>
 		<tk.mybatis.starter.version>2.0.4</tk.mybatis.starter.version>
-		<!--升级SpringBoot2.0.x后出现Which fixed NoSuchMethodError.RedisConnection.set([B[B)V issue
-		，需要解决https://github.com/spring-projects/spring-security-oauth2-boot/issues/27，
-		SpringBoot2.1.X已经解决，真是坑啊，所以说不要盲目的升级！！！-->
         <spring-security-oauth.version>2.3.3.RELEASE</spring-security-oauth.version>
 	</properties>
 	<parent>
@@ -38,6 +35,7 @@
 		<module>mss-gateway</module>
 		<module>mss-monitor</module>
 		<module>mss-upms</module>
+		<module>mss-foo</module>
 	</modules>
 	<dependencies>
 		<!--Lombok-->
@@ -84,11 +82,4 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<repositories>
-		<repository>
-			<id>alimaven</id>
-			<name>aliyun maven</name>
-			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
 </project>

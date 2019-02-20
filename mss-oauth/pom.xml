@@ -2,24 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
-		<groupId>com.microservice.skeleton</groupId>
-		<artifactId>Micro-Service-Skeleton-Parent</artifactId>
-		<version>2.0.0</version>
+		<groupId>com.microservice.asc</groupId>
+		<artifactId>Micro-Service-ASC-Parent</artifactId>
+		<version>1.0.0</version>
 	</parent>
-	<artifactId>Micro-Service-Skeleton-Auth</artifactId>
-	<version>2.0.0</version>
+	<artifactId>mss-oauth</artifactId>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
-
 	<name>mss-oauth</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.microservice.skeleton.common</groupId>
+			<groupId>com.microservice.asc</groupId>
 			<artifactId>mss-common</artifactId>
-			<version>2.0.0</version>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -70,6 +68,14 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
 		</dependency>
 
 		<dependency>

@@ -1,0 +1,1 @@
+java -jar .\target\mss-eureka-1.0.0.jar --spring.profiles.active=node-1
